@@ -17,6 +17,7 @@ Output
 Print n lines. The i-th line should contain the result of replacing of the i-th word from the input data.
 '''
 class WayTooLongWords:
+    
     def solve(self,strInputs):
         strOutputs = list()
         for line in strInputs:
@@ -24,12 +25,8 @@ class WayTooLongWords:
                 line = line[0]+str(len(line)-2)+line[-1]
             strOutputs.append(line)
         return strOutputs 
-            
-                
         
-        
-        
-        
+
 if __name__ == "__main__":
     
     i = 0
