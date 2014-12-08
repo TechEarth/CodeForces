@@ -2,7 +2,6 @@ __author__ = 'deveshbajpai'
 
 '''
 http://codeforces.com/problemset/problem/349/A
-If so, deduct 25 which is to be given to the customer. And then, add the customer bill amount excluding the ticket
 If current person has 25 bill, simply increase the available_25 by 1.
 If current person has 50 bill and available_25 is more than equal to 1, simply increase the available_50 by 1 and
 decrease available_25 by 1
