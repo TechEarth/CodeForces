@@ -7,9 +7,7 @@ Take max of a+b and b+c when b==1.
 '''
 
 def solve(a,b,c):
-    if(a==1 and b==1 and c==1):
-        return 3
-    elif(a==1 and c==1):
+    if(a==1 and c==1):
         return 2+b
     elif(a==1):
         return (a+b)*c
