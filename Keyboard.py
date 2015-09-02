@@ -36,7 +36,7 @@ def solve(direction,input):
             output += keys_curr[(index+1)%10]
         elif(direction=='R'):
             if(index-1==-1):
-                index = 9
+                index = 10
             output += keys_curr[index-1]
     return output
 
