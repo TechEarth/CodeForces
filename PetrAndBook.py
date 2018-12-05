@@ -13,11 +13,7 @@ def solve(n, daily):
     while n - daily[i] > 0:
 
         n -= daily[i]
-
-        if i == 6:
-            i = 0
-        else:
-            i += 1
+        i = (i+1) % 7
 
     return i+1 #+1 since array index start from 0, but the weekday start from 1
 
