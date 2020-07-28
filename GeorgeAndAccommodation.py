@@ -4,7 +4,7 @@ __author__ = 'Devesh Bajpai'
 https://codeforces.com/problemset/problem/467/A
 
 Solution: Just need to check for each room, the difference of max occupancy (q) and current occupancy (p) is >= 2
-or not. If so, the room can accomodate George and Alex and hence increase the counter.  
+or not. If so, the room can accommodate George and Alex and hence increase the counter.  
 '''
 
 
