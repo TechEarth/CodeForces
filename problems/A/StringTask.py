@@ -1,4 +1,6 @@
 '''
+https://codeforces.com/problemset/problem/118/A
+
 Petya started to attend programming lessons. On the first lesson his task was to write a simple program. The program was supposed to do the following: in the given string, consisting if uppercase and lowercase Latin letters, it:
 
 deletes all the vowels,
