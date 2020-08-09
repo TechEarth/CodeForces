@@ -1,6 +1,10 @@
 __author__ = 'deveshbajpai'
 
+'''
+https://codeforces.com/problemset/problem/230/A
 
+TODO: Not all testcases are passing
+'''
 
 def pairSort(inputs):
 
