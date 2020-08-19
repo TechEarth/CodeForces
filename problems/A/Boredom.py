@@ -26,28 +26,25 @@ So points scored in this case = dp[num-1]
 So thus we get the recurrence relation is:
  dp[num] = max(dp[num-1] , dp[num-2] + freq_map[num]*num)
  
-In order to have efficient space complexity, we make the dp array up till the maximum element in the array, 
-which is calculated while build the frequency map. 
 '''
 
 
 def solve(n, arr):
 
-    freq_map = {}
+    max_elem = 100000 #highest value allowed for an element
+    freq_map = [0] * (max_elem + 1)
 
-    #max_elem = arr[0]
-    max_elem = 100000
     for i in xrange(0, n):
-        freq_map[arr[i]] = arr.count(arr[i])
-        #max_elem = max(max_elem, arr[i])
+        freq_map[arr[i]] += 1
 
     dp = [0] * (max_elem + 1)
-    max_dp = 0
-    for num in xrange(1, max_elem + 1):
-        dp[num] = max(dp[num-1], dp[num-2] + num * (freq_map.get(num, 0)))
-        max_dp = max(max_dp, dp[num])
+    dp[0] = 0
+    dp[1] = freq_map[1]
 
-    return max_dp
+    for num in xrange(2, max_elem + 1):
+        dp[num] = max(dp[num-1], dp[num-2] + num * (freq_map[num]))
+
+    return dp[max_elem]
 
 
 if __name__ == "__main__":
