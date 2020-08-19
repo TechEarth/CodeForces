@@ -3,7 +3,6 @@ __author__ = 'Devesh Bajpai'
 '''
 https://codeforces.com/problemset/problem/455/A
 
-TODO: NOT YET PASSING ALL TESTCASES IN THE OJ
 Solution: We first calculate the frequency map of the array and the maximum element in that.   
 freq_map[arr[i]]= frequency of occurrence of arr[i] element
 
