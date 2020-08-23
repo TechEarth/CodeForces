@@ -74,11 +74,6 @@ def solve(n, s):
 
 if __name__ == "__main__":
 
-    '''
-    1
-    4
-    0101
-    '''
     t = int(raw_input())
 
     results = list()
