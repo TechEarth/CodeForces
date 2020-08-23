@@ -15,7 +15,7 @@ Also, lets workout a substring of pattern 10 and see how it can be reduced to 0:
 say, s = 00 11101010001000100 11111
 Using space to demarcate the leading 0s and trailing 1s.
 
-Now lets reduce the middle string:
+Now lets reduce the middle substring:
 
 11101010001000100
 1101010001000100
