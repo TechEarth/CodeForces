@@ -3,7 +3,8 @@ __author__ = 'Devesh Bajpai'
 '''
 https://codeforces.com/problemset/problem/1003/A
 
-Solution: TODO
+Solution: Since we cannot put the coins of same value in the same pocket, the deterministic factor is the frequency of
+the coins of a value. The maximum of that determines the pockets needed. 
 '''
 
 
