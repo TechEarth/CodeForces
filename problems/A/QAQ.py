@@ -11,8 +11,8 @@ build another QAQ. Also the earlier formed QAs would use this Q to form QAQ.
 
 Using this information, we can see that there is a sub-problem in this question which requires previous states of Q, QA
 and QAQ to form their current counterparts. Hence solve this by using DP keeping the previous and current values of these
-states. Finally, the answer lies in current QAQ counter. Since we carry forward the current state value into its previous
-one, in the end we will have to take a max of current and previous QAQ counter. 
+states. Finally, the answer lies in QAQ counter. Since we carry forward the current state value into its previous
+one, in the end we will have the answer previous QAQ counter. 
 '''
 
 
@@ -34,7 +34,7 @@ def solve(s):
         prev_qa = max(prev_qa, curr_qa)
         prev_qaq = max(prev_qaq, curr_qaq)
 
-    return max(prev_qaq, curr_qaq)
+    return prev_qaq
 
 
 if __name__ == "__main__":
