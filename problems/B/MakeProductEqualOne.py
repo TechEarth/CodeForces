@@ -15,7 +15,7 @@ is the final answer.
 
 def solve(n, arr):
 
-    moves = negatives = zeros = 0
+    moves = negatives = zeroes = 0
     for i in xrange(0, n):
         if arr[i] > 0:
             # making them 1
@@ -25,23 +25,23 @@ def solve(n, arr):
             moves += (-1 - arr[i])
             negatives += 1
         else:
-            zeros += 1
+            zeroes += 1
 
     # if odd number of negatives are there
     if negatives % 2 == 1:
 
         # if we can spare a 0, make it -1, which needs 1 moves
-        if zeros > 0:
+        if zeroes > 0:
             moves += 1
-            zeros -= 1
+            zeroes -= 1
         # if not, make one of the -1 as +1, which needs 2 moves
         else:
             moves += 2
             negatives -= 1
 
     # make all zeroes as 1s
-    if zeros > 0:
-        moves += zeros
+    if zeroes > 0:
+        moves += zeroes
 
     return moves
 
